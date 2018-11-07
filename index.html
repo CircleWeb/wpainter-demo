@@ -55,13 +55,13 @@
         saveImg: saveImg,
         loadImgBg: loadImgBg,
         loadImgFg: loadImgFg,
-cursor: 'rocket',
+        cursor: 'rocket',
         // image: './wPaint/20180704155346.jpg',
         crossOrigin: 'anonymous',
-pencil: 'url("/plugins/main/img/cursor-pencil.png")',
-	mode: 'pencil',
-	fillStyle: '#FFF',
-	strokeStyle: 'black'
+        pencil: 'url("/plugins/main/img/cursor-pencil.png")',
+        mode: 'pencil',
+        fillStyle: '#FFF',
+        strokeStyle: 'black'
       });
 
       // var a = new Image();
@@ -74,7 +74,7 @@ pencil: 'url("/plugins/main/img/cursor-pencil.png")',
       // a.onload = function() {//图片加载完，再draw 和 toDataURL
       //   ctx.drawImage(a, 0, 0);
       // }
-      // $("#wPaint").wPaint("image", './wPaint/20180704155346.jpg');
+      $("#wPaint").wPaint("image", 'images/Fetal Presentation_Cephalic.jpg');
 
       function saveImg(image) {
         var _this = this;
