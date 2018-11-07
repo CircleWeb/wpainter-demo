@@ -53,8 +53,15 @@
 
           // just in case to not draw on canvas
           e.stopPropagation();
-          if (type === 'fg') { _this.setImage(image); }
-          else if (type === 'bg') { _this.setBg(image, null, null, true); }
+          if (type === 'fg') { 
+            _this.setImage(image);
+            $('.wPaint-modal').fadeOut('fast',function(){
+              this.remove();
+            })
+            $('.wPaint-modal-bg').fadeOut('fast',function(){
+                this.remove();
+            })
+          }else if (type === 'bg') { _this.setBg(image, null, null, true); }
         }
 
         $img.on('click', imgClick);
